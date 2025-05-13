@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AI-Shiksha - Your AI Computer Science Teacher</title>
+    <meta name="description" content="AI-powered computer science learning for ages 3-18" />
+    <meta name="author" content="AI-Shiksha" />
+
+    <meta property="og:title" content="AI-Shiksha - Your AI Computer Science Teacher" />
+    <meta property="og:description" content="AI-powered computer science learning for ages 3-18" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ai_shiksha" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Google Fonts for OpenDyslexic alternative -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap">
+    
+    <style>
+      /* Add styles to ensure ElevenLabs widget visibility */
+      elevenlabs-convai {
+        position: fixed !important;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999 !important;
+        display: block !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        cursor: move;
+        touch-action: manipulation;
+        user-select: none;
+      }
+      
+      /* Hide any external links including 'edit with Lovable' */
+      a[href*="lovable.dev"], a[href*="gptengineer.app"] {
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+      
+      /* Mobile specific styles */
+      @media (max-width: 768px) {
+        elevenlabs-convai {
+          bottom: 70px !important;
+          right: 10px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+	
+	<!-- ElevenLabs Convai Widget -->
+	<elevenlabs-convai agent-id="DhcCcq0harYekxrNuNO5"></elevenlabs-convai>
+	<script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+	
+    <!-- Mobile fix for ElevenLabs widget -->
+    <script src="/js/elevenlabs-mobile-fix.js"></script>
+  </body>
+</html>
